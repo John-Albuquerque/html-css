@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+        }
+        header{
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+        }
+        header > h1{
+            box-shadow:inset 0px 0px 16px rgba(0, 0, 0, 0.452);
+        }
+        nav{
+            text-align: initial;
+            background-color: rgb(0, 178, 178);
+            padding: 3px;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.452);
+        }
+        nav > a{
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 10px 40px;
+        }
+        #assuntos {
+            text-align: initial;
+        }
+        
+        article{
+            text-align: initial;
+            background-color: aliceblue;
+            
+            border-radius: 10px 40px 10px 0px;
+        }
+        article > aside{
+            background-color: rgb(216, 222, 229);
+            border-radius: 0px 0px 10px 40px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tudo">
+
+        <header>
+            <h1>Meu site</h1>
+            <nav>
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href="">link</a>
+    
+            </nav>
+        </header>
+        <main>
+            <section id="assuntos">
+                <h2>Esporte Politicá e Tecnologia</h2>
+            </section>
+            <section id="noticias">
+                <article>
+                    <h2>Noticias sobre o Brasil</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid libero harum facere debitis
+                        et veniam excepturi velit repudiandae sit in, fugit dolore ab a inventore laborum ad aspernatur
+                        dignissimos?</p>
+                    <aside>
+                        <p>Artigo escrito po JohhFox</p>
+                    </aside>
+                </article>
+                <article>
+    
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido por JohhFox</p>
+        </footer>
+    </div>
+</body>
+
+</html>
