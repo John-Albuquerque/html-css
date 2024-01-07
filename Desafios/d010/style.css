@@ -15,7 +15,7 @@
 }
 @font-face {
     font-family: 'titulo';
-    src: url(titulo.otf) format(opentype);
+    src: url('titulo.otf') format(opentype);
     font-weight: normal;
     font-style: normal;
 }
