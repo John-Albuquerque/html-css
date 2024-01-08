@@ -1,19 +1,21 @@
 @charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-:root{
+:root {
    --font1: Verdana, Geneva, Tahoma, sans-serif;
    --font2: 'Passion One', sans-serif;
    --font3: 'Sriracha', cursive;
 }
-*{
+
+* {
    margin: 0px;
    padding: 0px;
    font-size: 1em;
 }
-   
+
 
 html body {
    min-height: 100vh;
@@ -44,26 +46,42 @@ footer a {
    text-decoration: none;
    font-weight: bolder;
 }
-section{
-   padding-left: 30px;
-   line-height: 2em;
+
+section {
    padding-top: 10vh;
    padding-bottom: 10vh;
+   line-height: 2em;
+   padding-left: 30px;
    font-family: var(--font3);
    font-size: 3.3vw;
 }
-.normal{
+section p{
+   padding-bottom: 2em;
+}
+.normal {
    background-color: white;
    color: black;
 }
-.imagem{
+
+.imagem {
    background-color: rgb(34, 34, 34);
    color: white;
+   box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.459);
+   background-position: right center;
+   background-size: cover;
+   background-attachment: fixed;
 }
-.imagem p{
+
+.imagem p {
    display: inline-block;
    padding: 5px;
-   background-color: rgba(0, 0, 0, 0.301);
+   background-color: rgba(0, 0, 0, 0.596);
+}
+#img01{
+   background-image: url(../imagens/background001.jpg);
+}
+#img02{
+   background-image: url(../imagens/background002.jpg);
 }
 header a:hover,
 footer a:hover {
