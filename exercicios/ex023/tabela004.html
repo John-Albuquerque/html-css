@@ -11,7 +11,7 @@
         table{
             border-collapse: collapse;
         }
-        td{
+        td, th{
             border: 1px solid black;
             padding: 5px;
         }
@@ -21,21 +21,27 @@
         }
     </style>
 </head>
-<body>
+<bodyh
     <H1>Tabela com nomes</H1>
     <table>
         <thead>
 
             <tr>
-                <td class="titulo">Grupo</td>
-                <td class="titulo">Nomes</td>
-                <td colspan="3" class="titulo">Filmes</td>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row"> Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
         <tbody>
 
             <tr>
-                <td rowspan="3" class="titulo">Mulheres</td>
+                <th rowspan="3">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -54,7 +60,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <td rowspan="3" class="titulo">Homems</td>
+                <th rowspan="3">Homems</th>
                 <td>Buno Mendonça</td>
                 <td>Intocavei</td>
                 <td>Amnesia</td>
